@@ -2,10 +2,36 @@ import random
 
 # random.seed('class_01')
 
-array = [random.randrange(100) for _ in range(30)]
-l_arr = len(array)
-print(array, l_arr)
+# array = [random.randrange(100) for _ in range(30)]
+# l_arr = len(array)
+# print(array, l_arr)
 
+words = [
+
+  '2022180039', 'hut', 'apostle', 'equipment', 'fop', 'refined', 'parapet', 'mog', 'amputate', 'covetous', 'somebody',
+
+  'all', 'lobbyist', 'remark', 'subscriber', 'quorum', 'steppe', 'clean', 'cu', 'commend', 'prosy',
+
+  'supererogation', 'indignation', 'wolverine', 'emporium', 'intersect', 'constitution', 'miscast', 'rabbi', 'enmity', 'loft',
+
+  'temporize', 'speedboat', 'agenda', 'delusion', 'class01', 'idolize', 'romance', 'overestimate', 'revive', 'smell',
+
+  'toast', 'singe', 'inlay', 'field', 'speed', 'farad', 'adult', 'pansy', 'crawl', 'smith', 'exude',
+
+  'froze', 'litho', 'inuit', 'fakir', 'noddy', 'sheen', 'sandy', 'gaffe', 'spark', 'cavil', 'tenor',
+
+  'clonk', 'stung', 'boult', 'inapt', 'taker', 'cliff', 'shine', 'sable', 'agile', 'evens', 'pluck',
+
+  'blade', 'niece', 'paste', 'theft', 'young', 'bonny', 'aggro', 'bevel', 'rebel', 'clown', 'quote',
+
+  'horsy', 'wrong', 'hindu', 'acute', 'sloop', 'tuner', 'expel', 'motel', 'divan', 'gesso', 'strop',
+
+  'lance', 'lifer', 'dunce', 'lemur', 'scree', 'basic', 'wring', 'graph', 'conch', 'favor', 'anise',
+
+  'value', 'queue', 'poppy', 'staid', 'snook', 'spurt', 'canto', 'sprat', 'first', 'sidle', 'douse',
+
+]
+l_arr = len(words)
 def merge(arr, first_left, first_right, end):  #end = inclusive
     merged = []
     l, r = first_left, first_right
@@ -48,5 +74,5 @@ def mergeSort(arr, beg, end):   # end = inclusive
     merge(arr, beg, first_right, end)
 
 
-mergeSort(array, 0, l_arr - 1)
-print(array)
+mergeSort(words, 0, l_arr - 1)
+print(words)
