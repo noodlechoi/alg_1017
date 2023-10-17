@@ -7,6 +7,7 @@ l_arr = len(array)
 print(array, l_arr)
 
 def merge(arr, first_left, first_right, end):  #end = inclusive
+    merged = []
     l, r = first_left, first_right
     # 두 그룹에 선수가 있으면
     while A반에 선수 있다 and B반에 선수 있다:
@@ -19,6 +20,8 @@ def merge(arr, first_left, first_right, end):  #end = inclusive
         남은 선수추가
     while B반에 선수 있다:
         남은 선수추가
+    merged에 있는 것을 arr로 옮기기
+    
 def mergeSort(arr, beg, end):   # end = inclusive
     # size = end - beg + 1
     # if size <= 1: return
