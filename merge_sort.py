@@ -1,6 +1,6 @@
 import random
 
-random.seed('class_01')
+# random.seed('class_01')
 
 array = [random.randrange(100) for _ in range(30)]
 l_arr = len(array)
@@ -32,10 +32,11 @@ def merge(arr, first_left, first_right, end):  #end = inclusive
     #     r += 1
     if l < first_right:# A반에 선수가 있다
         merged += arr[l:first_right]
+        arr[first_left:end + 1] = merged
     else:
-        merged += arr[r:end + 1]
+        # merged += arr[r:end + 1]
+        arr[first_left:r] = merged
     # merged에 있는 것을 arr로 옮기기
-    arr[first_left:end + 1] = merged
 
 def mergeSort(arr, beg, end):   # end = inclusive
     # size = end - beg + 1
